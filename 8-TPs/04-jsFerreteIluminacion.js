@@ -13,20 +13,21 @@ function CalcularPrecio ()
     let cantidad;
     let marca;
     let preciobase = 35;
-    let preciodescuento;
-let preciocondescuento;
+    let preciocondescuento;
+   
 
     
     cantidad = parseInt(document.getElementById("txtIdCantidad").value);
     marca = document.getElementById("Marca").value;
-    document.getElementById("txtIdprecioDescuento").value= preciocondescuento;
+    document.getElementById("txtIdprecioDescuento").value= parseInt(preciocondescuento);
 
-        if(cantidad>=6){
-alert(`el precio es ${preciobase - preciobase * 0.5}`);
-document.getElementById("txtIdprecioDescuento").value= preciocondescuento
-= preciobase - preciobase * 0.5};
-}
-    
+        if(cantidad>=6){ 
+            preciocondescuento = preciobase - preciobase * 0.5;
+document.getElementById("txtIdprecioDescuento").value= parseFloat(preciocondescuento);} 
+    }
+
+
+ 
     
     	
 
